@@ -1,0 +1,3 @@
+const x = 45;
+const y = 78;
+console.log(x + y);
