@@ -1,15 +1,24 @@
 module.exports = {
-  myself: {
+  home: {
     color: "primary",
-    title: "presentation"
+    title: "Soutenance orale - 2017",
+    subtitles: ["IUT Haguenau - Licence TAIS", "Option D-WEB"],
+    subColor: "quaternary"
+  },
+  myself: {
+    color: "yellow",
+    title: "Presentation",
+    subtitles: "Me, Myself & I"
   },
   entreprise: {
-    color: "secondary",
-    title: "entreprise"
-  },
-  presentation: {
     color: "tertiary",
-    title: "presentation mission"
+    title: "Entreprise",
+    subtitles: "Le Crédit Agricole Alsace Vosges"
+  },
+  mission: {
+    color: "secondary",
+    title: "Présentation de la mission",
+    subtitles: "Les assemblées générales"
   },
   description: {
     color: "quaternary",

@@ -1,7 +1,8 @@
 module.exports = {
   black: "#2c3e50",
-  white: "#ecf0f1",
-  primary: "#FFCA28",
+  grey: "rgba(44, 62, 80, 0.6)",
+  yellow: "#FFCA28",
+  primary: "#ecf0f1",
   secondary: "#D4E157",
   tertiary: "#66BB6A",
   quaternary: "#26C6DA",
