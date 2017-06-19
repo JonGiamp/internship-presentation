@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Layout, Slide, Text, SlideSet, Heading, Fill,
+  Layout, Slide, Text, SlideSet, Heading,
   Appear, List, ListItem, Table, TableRow, TableHeaderItem,
   TableItem, TableBody, TableHeader
 } from "spectacle";
@@ -75,7 +75,7 @@ export default function mission() {
           <Table textAlign="left">
             <TableHeader textAlign="left">
               <TableRow style={{ margin: "0 0 30px" }}>
-                <TableHeaderItem textSize="2.2rem" textColor={black} style={{ width: "275px" }}>Services</TableHeaderItem>
+                <TableHeaderItem textSize="2.2rem" textColor={black} style={{ width: "325px" }}>Services</TableHeaderItem>
                 <TableHeaderItem textSize="2.2rem" textColor={black}>Fonctions</TableHeaderItem>
               </TableRow>
             </TableHeader>

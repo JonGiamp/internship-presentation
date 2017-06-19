@@ -1,0 +1,4 @@
+if($method == 'GET') {
+    $post = $db->query('select * from ag_list');
+    response($post->fetchAll());
+}

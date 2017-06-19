@@ -1,0 +1,11 @@
+CREATE TABLE ag_register
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    ag VARCHAR(150),
+    part_number BIGINT(14),
+    name VARCHAR(150),
+    question TEXT,
+    proc_name VARCHAR(150)
+    register_date DATE,
+    accept TINYINT(1)
+)

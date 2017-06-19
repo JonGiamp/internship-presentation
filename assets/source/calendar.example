@@ -1,0 +1,8 @@
+CREATE TABLE ag-calendar
+(
+    id INT(11) PRIMARY KEY NOT NULL,
+    name VARCHAR(150),
+    address VARCHAR(300),
+    date DATE,
+    gmap_loc VARCHAR(300)
+)

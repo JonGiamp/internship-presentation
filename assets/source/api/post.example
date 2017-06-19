@@ -1,0 +1,18 @@
+elseif($method == 'POST') {
+  $json = file_get_contents("php://input");
+	$data = json_decode($json);
+
+  $date = new DateTime();
+  $now = $date->format("Y-m-d H:i:s");
+
+  $insert = $db->query('INSERT INTO ag_register (ag, part_number, name, question, proc_name, register_date, accept) VALUES ( '
+		.$db->quote($data->ag).','
+		.$db->quote($data->part_number).','
+		.$db->quote($data->name).','
+		.$db->quote($data->question).','
+		.$db->quote($data->procuration->proc_name).
+        ',now(),'
+		.$db->quote($data->accept).')');
+
+	response($insert ? $db->lastInsertId() : false);
+}

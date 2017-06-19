@@ -1,0 +1,23 @@
+function response($data) {
+  header('Content-Type: application/json');
+  echo json_encode($data);
+  exit;
+}
+
+$method = $_SERVER['REQUEST_METHOD'];
+
+$db = new PDO('mysql:host=XX;dbname=XX', 'XX', 'XX');
+$db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+header("Access-Control-Allow-Origin: *");
+
+if($method == 'GET') {
+  /* LOGIC HERE */
+} elseif($method == 'POST') {
+  /* LOGIC HERE */
+} elseif($method == 'OPTIONS') {
+  /* LOGIC HERE */
+}	else {
+  header($_SERVER['SERVER_PROTOCOL'].' 404 Not Found');
+  exit;
+}

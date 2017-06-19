@@ -4,7 +4,7 @@ import createTheme from "spectacle/lib/themes/default";
 import {
   black, grey, yellow, primary, secondary, tertiary, quaternary, quinary, senary, septenary
 } from "./data/colors";
-import { home, myself, entreprise, mission } from "./sections/index";
+import { home, myself, entreprise, mission, description } from "./sections/index";
 
 require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
@@ -53,6 +53,7 @@ export default class Presentation extends React.Component {
           { myself() }
           { entreprise() }
           { mission() }
+          { description() }
       </Deck>
     );
   }

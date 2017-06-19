@@ -22,11 +22,11 @@ module.exports = {
   },
   description: {
     color: "quaternary",
-    title: "description mission"
+    title: "Description de la mission"
   },
   analyse: {
     color: "quinary",
-    title: "analyse mission"
+    title: "Analyse mission"
   },
   conclusion: {
     color: "senary",

@@ -56,7 +56,7 @@ export default function entreprise() {
         </Layout>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
-        <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
+        <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
         <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <Heading size={6} textColor={black}>
@@ -79,7 +79,7 @@ export default function entreprise() {
         </Layout>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
-        <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
+        <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Heading size={6} textColor={black} margin="0 0 45px">
           Quelques chiffres
         </Heading>
@@ -115,7 +115,7 @@ export default function entreprise() {
         </List>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
-        <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
+        <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
         <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
           <Heading size={6} textColor={black}>
@@ -138,7 +138,7 @@ export default function entreprise() {
         </Layout>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
-        <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
+        <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
         <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <Heading size={6} textColor={black}>
@@ -161,7 +161,7 @@ export default function entreprise() {
         </Layout>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
-        <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
+        <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
         <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <img src={images.fort} style={{ width: "150px", alignSelf: "center" }} />
