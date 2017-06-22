@@ -43,7 +43,7 @@ export default function entreprise() {
     <SlideSet bgColor={primary}>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary}>
         <Heading size={2} fit caps lineHeight={1} textColor={data.color}>
-          {`Mon ${data.title}`}
+          {data.title}
         </Heading>
         <Text size={1} textColor={"black"}>{ data.subtitles }</Text>
       </Slide>
@@ -108,11 +108,13 @@ export default function entreprise() {
             {"Qu'est-ce qu'un sociétaire ?"}
           </Heading>
         </Layout>
-        <Layout style={{ alignItems: "center", justifyContent: "center" }}>
-          <Text textSize="2rem" textColor={grey}>
-            Un sociétaire est un acteur du Crédit Agricole qui détient, sous forme de parts sociales, une partie du capital des Caisses locales.
-          </Text>
-        </Layout>
+        <Appear>
+          <Layout style={{ alignItems: "center", justifyContent: "center" }}>
+            <Text textSize="2rem" textColor={grey}>
+              Un sociétaire est un acteur du Crédit Agricole qui détient, sous forme de parts sociales, une partie du capital des Caisses locales.
+            </Text>
+          </Layout>
+        </Appear>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
         <Text textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
@@ -182,9 +184,9 @@ export default function entreprise() {
               {"Mon rôle dans l'équipe"}
             </Heading>
             <List>
-              <ListItem textColor={grey} textSize={"1.6rem"}>Créer et développer les projets</ListItem>
-              <ListItem textColor={grey} textSize={"1.6rem"}>Créer du contenu sur le site</ListItem>
-              <ListItem textColor={grey} textSize={"1.6rem"}>Epaûler les webmasters</ListItem>
+              <Appear><ListItem textColor={grey} textSize={"1.6rem"}>Créer et développer les projets</ListItem></Appear>
+              <Appear><ListItem textColor={grey} textSize={"1.6rem"}>Créer du contenu sur le site</ListItem></Appear>
+              <Appear><ListItem textColor={grey} textSize={"1.6rem"}>Epaûler les webmasters</ListItem></Appear>
             </List>
           </Fill>
         </Layout>

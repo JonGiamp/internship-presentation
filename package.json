@@ -1,6 +1,6 @@
 {
   "name": "intership-presentation",
-  "version": "0.1",
+  "version": "1.0.0",
   "description": "Intership presentation - IUT Haguenau 2017",
   "main": "lib/index.js",
   "scripts": {
