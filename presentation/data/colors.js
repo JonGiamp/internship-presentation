@@ -8,5 +8,5 @@ module.exports = {
   quaternary: "#26C6DA",
   quinary: "#42A5F5",
   senary: "#B39DDB",
-  septenary: "#F48FB1"
+  septenary: "#FF9800"
 };

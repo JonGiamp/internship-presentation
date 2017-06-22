@@ -6,16 +6,15 @@ import { entreprise as data } from "../data/sections";
 import { black, grey, primary } from "../data/colors";
 import preloader from "spectacle/lib/utils/preloader";
 
-const src = require("../../assets/images/iut.png");
-
 const images = {
-  caav: src,
-  fort: src,
-  bastien: src,
-  anais: src,
-  pierre: src,
-  emmanuel: src,
-  jon: src
+  caav: require("../../assets/images/caav.png"),
+  fort: require("../../assets/images/pierre-fort.png"),
+  bastien: require("../../assets/images/francis-bastien.png"),
+  anais: require("../../assets/images/anais.png"),
+  pierre: require("../../assets/images/pierre.png"),
+  emmanuel: require("../../assets/images/emmanuel.png"),
+  jon: require("../../assets/images/jon.png"),
+  jonPc: require("../../assets/images/jon-pc.png")
 };
 
 preloader(images);
@@ -24,6 +23,20 @@ const styles = {
   textTransform: "capitalize",
   marginBottom: "90px"
 };
+
+const slide8 = `
+  <h3>Fort : 2016</h3>
+  <h3>Bastien: 2012</h3>
+`;
+
+const slide9 = `
+  <h3>Collaborateurs</h3>
+  <ul>
+    <li>200 dans le sièges</li>
+    <li>Le reste réunit dans les 195 agences</li>
+    <li>60 jeunes en alternance</li>
+  </ul>
+`;
 
 export default function entreprise() {
   return (
@@ -34,7 +47,7 @@ export default function entreprise() {
         </Heading>
         <Text size={1} textColor={"black"}>{ data.subtitles }</Text>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" notes={"<h3>Définir caisses régionales</h3>"}>
         <Text textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
           <Heading size={6} textColor={black} margin="0 0 45px">
@@ -51,34 +64,31 @@ export default function entreprise() {
         </Layout>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
           <Text textSize="2rem" textColor={grey}>
-            Fait partit du réseau des 39 caisses régionales
+            Fait partie du réseau des 39 caisses régionales
           </Text>
         </Layout>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" notes={slide8}>
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
+        <Heading size={6} textColor={black} margin="0 0 45px">
+          Direction Générale
+        </Heading>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <Heading size={6} textColor={black}>
-              Pierre fort
+          <Fill style={{ height: "200px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <Heading size={6} textColor={grey}>
+              Pierre Fort
             </Heading>
             <img src={images.fort} style={{ width: "150px", alignSelf: "center" }} />
-            <Text textColor={grey} >
-              Direction Générale
-            </Text>
           </Fill>
-          <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-            <Heading size={6} textColor={black}>
+          <Fill style={{ height: "200px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <Heading size={6} textColor={grey}>
               Francis Bastien
             </Heading>
             <img src={images.bastien} style={{ width: "150px", alignSelf: "center" }}/>
-            <Text textColor={grey} >
-              Direction Générale Adjointe
-            </Text>
           </Fill>
         </Layout>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" notes={slide9}>
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Heading size={6} textColor={black} margin="0 0 45px">
           Quelques chiffres
@@ -88,6 +98,7 @@ export default function entreprise() {
           <Appear><ListItem textColor={grey} textSize={"2rem"}>1 500 collaborateurs</ListItem></Appear>
           <Appear><ListItem textColor={grey} textSize={"2rem"}>7 directions distinctes</ListItem></Appear>
           <Appear><ListItem textColor={grey} textSize={"2rem"}>466 000 clients dont 138 000 sociétaires</ListItem></Appear>
+          <Appear><ListItem textColor={grey} textSize={"2rem"}>1 million de visites sur le site internet par mois</ListItem></Appear>
         </List>
       </Slide>
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
@@ -106,7 +117,7 @@ export default function entreprise() {
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
         <Text textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Heading size={6} textColor={black} margin="0 0 45px">
-          Quels sont ces avantages ?
+          Quels sont ses avantages ?
         </Heading>
         <List>
           <Appear><ListItem textColor={grey} textSize={"1.8rem"}>Il bénéficie de services qui lui sont réservés</ListItem></Appear>
@@ -114,19 +125,19 @@ export default function entreprise() {
           <Appear><ListItem textColor={grey} textSize={"1.8rem"}>Il fait entendre sa voix lors d’assemblées générales</ListItem></Appear>
         </List>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" notes={"<h3>Pierre + 20 ans, Anais + de 10 ans</h3>"}>
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
-          <Heading size={6} textColor={black}>
-            Pierre Kiefer
-          </Heading>
-          <img src={images.pierre} style={{ width: "150px", alignSelf: "center" }}/>
-          <Text textColor={grey} >
-            Webmaster
-          </Text>
-        </Fill>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <Fill style={{ height: "450px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+            <Heading size={6} textColor={black}>
+              Pierre Kiefer
+            </Heading>
+            <img src={images.pierre} style={{ height: "280px", alignSelf: "center" }}/>
+            <Text textColor={grey} >
+              Webmaster
+            </Text>
+          </Fill>
+          <Fill style={{ height: "450px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <Heading size={6} textColor={black}>
               Anaïs Vogt
             </Heading>
@@ -137,10 +148,10 @@ export default function entreprise() {
           </Fill>
         </Layout>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" styles="<h3>Emmanuel depuis 1 ans</h3>">
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <Fill style={{ height: "450px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <Heading size={6} textColor={black}>
               Emmanuel Clerc
             </Heading>
@@ -149,7 +160,7 @@ export default function entreprise() {
               {"Chef d'équipe"}
             </Text>
           </Fill>
-          <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <Fill style={{ height: "450px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <Heading size={6} textColor={black}>
               Jonathan Giamporcaro
             </Heading>
@@ -163,19 +174,19 @@ export default function entreprise() {
       <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>2. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <img src={images.fort} style={{ width: "150px", alignSelf: "center" }} />
-        </Fill>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "center", flexGrow: "2" }}>
-          <Heading size={6} textColor={black}>
-            {"Mon rôle dans l'équipe"}
-          </Heading>
-          <List>
-            <ListItem textColor={grey} textSize={"1.6rem"}>Créer et développer les projets</ListItem>
-            <ListItem textColor={grey} textSize={"1.6rem"}>Créer du contenu sur le site</ListItem>
-            <ListItem textColor={grey} textSize={"1.6rem"}>Epaûler les webmaster</ListItem>
-          </List>
-        </Fill>
+          <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+            <img src={images.jonPc} style={{ width: "200px", alignSelf: "center" }} />
+          </Fill>
+          <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "center", flexGrow: "2" }}>
+            <Heading size={6} textColor={black}>
+              {"Mon rôle dans l'équipe"}
+            </Heading>
+            <List>
+              <ListItem textColor={grey} textSize={"1.6rem"}>Créer et développer les projets</ListItem>
+              <ListItem textColor={grey} textSize={"1.6rem"}>Créer du contenu sur le site</ListItem>
+              <ListItem textColor={grey} textSize={"1.6rem"}>Epaûler les webmasters</ListItem>
+            </List>
+          </Fill>
         </Layout>
       </Slide>
     </SlideSet>

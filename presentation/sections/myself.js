@@ -5,8 +5,11 @@ import { black, grey, primary } from "../data/colors";
 import preloader from "spectacle/lib/utils/preloader";
 
 const images = {
-  uha: require("../../assets/images/iut.png"),
-  iut: require("../../assets/images/uha.png")
+  uha: require("../../assets/images/uha.png"),
+  iut: require("../../assets/images/iut.png"),
+  caldera: require("../../assets/images/caldera.png"),
+  pan: require("../../assets/images/pan.png"),
+  caav: require("../../assets/images/caav.png")
 };
 
 preloader(images);
@@ -15,6 +18,14 @@ const styles = {
   textTransform: "capitalize",
   marginBottom: "90px"
 };
+
+const slide3 = `
+  <h3>Parler de ma passion des sciences</h3>
+  <h3>Parler de mon autodidactie</h3>
+  <h3>Prise de conscience devs</h3>
+  <h3>Postuler et entretiens IUT</h3>
+  <h3>Transition vers le stage</h3>
+`;
 
 export default function myself() {
   return (
@@ -36,10 +47,10 @@ export default function myself() {
           </Text>
         </Layout>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" notes={slide3}>
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
-        <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+          <Fill style={{ height: "350px", display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
             <Heading size={6} textColor={black}>
               Licence chimie
             </Heading>
@@ -70,7 +81,7 @@ export default function myself() {
           <Appear><ListItem textColor={grey}>Utiliser un workflow intelligent</ListItem></Appear>
         </List>
       </Slide>
-      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
+      <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start" notes={"<h3>Présenter chaque entreprises</h3>"}>
         <Text size={1} textColor={data.color} textAlign="left" style={styles}>1. {data.title}</Text>
         <Heading size={6} textColor={black} margin="0 0 45px">
           {"Mes entretiens d'embauche"}
@@ -78,17 +89,17 @@ export default function myself() {
         <Layout style={{ alignItems: "center", justifyContent: "center" }}>
           <Appear>
             <Fill style={{ height: "350px" }}>
-              <img src={images.uha}/>
+              <img src={images.caldera}/>
             </Fill>
           </Appear>
           <Appear>
             <Fill style={{ height: "350px" }}>
-              <img src={images.uha}/>
+              <img src={images.pan}/>
             </Fill>
           </Appear>
           <Appear>
             <Fill style={{ height: "350px" }}>
-              <img src={images.uha}/>
+              <img src={images.caav}/>
             </Fill>
           </Appear>
         </Layout>

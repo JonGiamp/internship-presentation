@@ -7,29 +7,31 @@ module.exports = {
   },
   myself: {
     color: "yellow",
-    title: "Presentation",
+    title: "Présentation",
     subtitles: "Me, Myself & I"
   },
   entreprise: {
     color: "tertiary",
-    title: "Entreprise",
+    title: "Mon entreprise",
     subtitles: "Le Crédit Agricole Alsace Vosges"
   },
   mission: {
-    color: "secondary",
+    color: "septenary",
     title: "Présentation de la mission",
     subtitles: "Les assemblées générales"
   },
   description: {
     color: "quaternary",
-    title: "Description de la mission"
+    title: "Description de la mission",
+    subtitles: "Du back-end au front-end"
   },
   analyse: {
-    color: "quinary",
-    title: "Analyse mission"
+    color: "senary",
+    title: "Analyse de la mission",
+    subtitles: "Reflexion à posteriori"
   },
   conclusion: {
-    color: "senary",
+    color: "quinary",
     title: "Conclusion"
   },
   thanks: {
