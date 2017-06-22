@@ -22,7 +22,7 @@ export default function home() {
     </Slide>
     <Slide transition={["slide"]} transitionDuration={300} bgColor={primary} align="flex-start flex-start">
       <Heading size={6} textColor={black} margin="0 0 45px">
-        Plan orale
+        Plan oral
       </Heading>
       <List>
         <Appear><ListItem textColor={grey}>Présentation</ListItem></Appear>
